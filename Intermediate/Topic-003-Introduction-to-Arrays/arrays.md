@@ -193,8 +193,21 @@ while(i < j) {
 // TC: O(N), SC: O(1)
 ```
 
-### 3. Rotate Array K Times (Optimized)
+### 3. Rotate Array K Times
 **Problem**: Rotate array right by K positions
+
+**Brute Force Approach**:
+```c
+// Rotate K times, each time shift by 1 position
+for(int i = 1; i <= K; i++) {
+    int temp = arr[N-1];  // Store last element
+    for(int j = N-2; j >= 0; j--) {
+        arr[j+1] = arr[j];  // Shift elements right
+    }
+    arr[0] = temp;  // Place last element at first position
+}
+// TC: O(N*K), SC: O(1)
+```
 
 **Efficient Approach** (3 reversals):
 1. Reverse entire array
