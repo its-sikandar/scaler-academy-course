@@ -8,3 +8,7 @@
 ## Quick Links
 - [All Problems](./programs.md)
 - [Progress Tracker](./progress-tracker.md)
+
+## Repository Notes
+- **PDF files are excluded** from version control (see .gitignore)
+- Focus on code solutions and markdown documentation
